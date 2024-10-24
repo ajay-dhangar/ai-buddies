@@ -12,10 +12,12 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --hero-gradient-start: #34d399; /* Light greenish */
+  --hero-gradient-end: #3b82f6; /* Light blue */
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+/* Dark mode settings */
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -24,4 +26,62 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --hero-gradient-start: #22d3ee; /* Light cyan */
+  --hero-gradient-end: #6366f1; /* Light indigo */
 }
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, var(--hero-gradient-start), var(--hero-gradient-end));
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: linear-gradient(135deg, var(--hero-gradient-start), var(--hero-gradient-end));
+  z-index: 1000;
+}
+
+/* .navbar__inner {} */
+
+
+/* .navbar__items {} */
+
+.navbar__item {
+  margin: 0 1rem;
+}
+
+.navbar__link {
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* .navbar__link:hover {} */
+
+/* .navbar__brand {} */
+
+/* .navbar__logo img {} */
+
+.navbar__title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* .navbar--fixed-top {} */
