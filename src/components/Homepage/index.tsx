@@ -1,7 +1,9 @@
 import React from "react";
 import Hero from "./Hero";
 import About from "./About";
+import FeaturedProjects from "./FeaturedProjects";
 import PopularCourses from "./PopularCourses";
+import Link from "@docusaurus/Link";
 
 const Homepage: React.FC = () => {
   return (
@@ -9,23 +11,23 @@ const Homepage: React.FC = () => {
       <Hero
         capsuleText="100% Open-source & Free"
         capsuleLink="#"
-        title="AIBuddies - Your AI Learning Companion"
+        title="Your AI Learning Companion"
         subtitle="Learn AI through hands-on projects, interactive learning paths, and community-driven content."
         primaryCtaText="Get Started"
-        primaryCtaLink="#" // /docs/
+        primaryCtaLink="/docs/"
         secondaryCtaText="GitHub"
         secondaryCtaLink="https://github.com/ai-buddies/ai-buddies.github.io"
         credits={
           <>
             Designed & Developed with ❤️ by{" "}
-            <a
-              href="https://github.com/ajay-dhangar"
+            <Link
+              to="https://github.com/ajay-dhangar"
               target="_blank"
               rel="noreferrer"
-              className="text-white hover:text-[#FFD700] transition duration-300"
+              className="text-blue-600 hover:underline"
             >
               Ajay Dhangar
-            </a>
+            </Link>
           </>
         }
       />
@@ -36,6 +38,7 @@ const Homepage: React.FC = () => {
         ctaText="Learn More"
         ctaLink="#" // /about/
       />
+      <FeaturedProjects />
       <PopularCourses />
     </div>
   );

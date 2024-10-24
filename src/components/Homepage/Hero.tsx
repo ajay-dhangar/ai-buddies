@@ -27,25 +27,25 @@ const Hero: React.FC<HeroProps> = ({
   secondaryCtaLink,
 }) => {
   return (
-    <section className="relative py-16 md:py-32 lg:py-48s hero-bg text-white dark:text-gray-200">
+    <section className="relative py-8 md:py-16 lg:py-32 noise-bg">
       <div className="container mx-auto max-w-[64rem] text-center space-y-6">
         <Link
           href={capsuleLink}
-          className="inline-block bg-gray-800 bg-opacity-60 text-white rounded-full px-4 py-1.5 text-sm font-medium hover:bg-opacity-80 transition duration-300"
+          className="inline-block px-4 py-1.5 text-xs font-semibold tracking-wider uppercase bg-gray-300 rounded-full animate-fade-in bg-opacity-60 hover:bg-opacity-80 transition duration-300 text-gray-800 dark:text-gray-100"
           target="_blank"
         >
           {capsuleText}
         </Link>
-        <h1 className="font-heading text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight tracking-wide animate-fade-in">
+        <h1 className="font-heading text-3xl sm:text-4xl lg:text-6xl leading-tight tracking-wide animate-fade-in">
           {title}
         </h1>
-        <p className="max-w-2xl mx-auto text-base sm:text-xl md:text-2xl leading-relaxed text-gray-100 animate-fade-in delay-150">
+        <p className="max-w-2xl mx-auto text-base sm:text-xl md:text-2xl leading-relaxed animate-fade-in delay-150">
           {subtitle}
         </p>
         <div className="flex gap-4 flex-wrap justify-center animate-fade-in delay-300">
           <Link
             href={primaryCtaLink}
-            className={cn(buttonVariants({ size: "lg" }), "bg-white text-gray-800 hover:bg-gray-100")}
+            className={cn(buttonVariants({ size: "lg" }), "bg-gray-300 text-gray-800 hover:bg-gray-800 hover:text-white")}
           >
             {primaryCtaText}
           </Link>
@@ -53,13 +53,13 @@ const Hero: React.FC<HeroProps> = ({
             href={secondaryCtaLink}
             target="_blank"
             rel="noreferrer"
-            className={cn(buttonVariants({ variant: "outline", size: "lg" }), "border-white text-white hover:bg-white hover:text-gray-800")}
+            className={cn(buttonVariants({ variant: "outline", size: "lg" }), "bg-gray-300 text-gray-800 hover:bg-gray-800 hover:text-white")}
           >
             {secondaryCtaText}
           </Link>
         </div>
         {credits && (
-          <p className="mt-4 text-gray-800">
+          <p className="mt-4 animate-fade-in delay-450">
             {credits}
           </p>
         )}

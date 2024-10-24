@@ -51,11 +51,6 @@
   }
 }
 
-.hero-bg {
-  background: linear-gradient(135deg, var(--hero-gradient-start), var(--hero-gradient-end));
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -100,4 +95,35 @@ a:hover {
 
 .fade-in-up {
   animation: fade-in-up 0.6s ease-in-out forwards;
+}
+
+.text-primaryColor {
+  color: #48df84;
+}
+@layer components {
+  .noise-bg {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.6)), url('/landing-page/grid-light.svg');
+  }
+
+  html[data-theme='dark'] .noise-bg {
+    background-image: url('/landing-page/grid-dark.svg');
+  }
+
+  .dyte-badge {
+    @apply mb-2 inline-block rounded-sm text-text-400;
+    @apply tracking-wider;
+  }
+}
+
+.custom-drop-shadow {
+  filter: drop-shadow(0 4px 6px var(--ifm-color-primary));
+}
+
+[data-theme='dark'] #__docusaurus_skipToContent_fallback {
+  background: linear-gradient(rgba(15, 23, 42, 0.796), rgba(15, 23, 42, 0.23));
+}
+[data-theme='dark'] .navbar {
+  background: rgba(15, 23, 42, 0.862);
+  border-bottom: 1px solid #4e8da0db;
 }
