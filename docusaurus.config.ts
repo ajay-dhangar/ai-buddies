@@ -63,7 +63,19 @@ const config: Config = {
     ],
   ],
 
-  plugins: [tailwindPlugin],
+  plugins: [
+    tailwindPlugin,
+    // [
+    //   '@docusaurus/plugin-ideal-image',
+    //   {
+    //     quality: 70,
+    //     max: 1030, // max resized image's size.
+    //     min: 640, // min resized image's size. if original is lower, use that size.
+    //     steps: 2, // the max number of images generated between min and max (inclusive)
+    //     disableInDev: false,
+    //   },
+    // ],
+  ],
 
   themeConfig: {
     // Replace with your project's social card
@@ -72,7 +84,7 @@ const config: Config = {
       title: "AIBuddies",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "img/logo.jpg",
       },
       items: [
         {

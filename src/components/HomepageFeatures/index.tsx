@@ -1,9 +1,10 @@
 import Hero from "./Hero";
+import About from "./About";
 
-export default function HomepageFeatures(): JSX.Element {
+function HomepageFeatures(): JSX.Element {
   return (
     <div>
-     <Hero
+      <Hero
         capsuleText="100% Open-source & Free"
         capsuleLink="#"
         title="AIBuddies - Your AI Learning Companion"
@@ -26,6 +27,15 @@ export default function HomepageFeatures(): JSX.Element {
           </>
         }
       />
+      <About
+        title="About AIBuddies"
+        description="AIBuddies is a community-driven platform aimed at making AI learning accessible and engaging. Our resources are tailored to all levels, from beginners to advanced learners, helping you build practical skills in AI development."
+        imageUrl="/img/logo.jpg"
+        ctaText="Learn More"
+        ctaLink="#" // /about/
+      />
     </div>
   );
 }
+
+export default HomepageFeatures;
