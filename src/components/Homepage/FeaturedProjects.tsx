@@ -33,6 +33,9 @@ const FeaturedProjects: React.FC = () => {
     <section className="py-20 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Featured Projects</h2>
+        <p className="text-center text-lg text-gray-600 dark:text-gray-300 mb-12">
+          Explore some of our featured projects built by the AIBuddies community.
+        </p>
         <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
           {projects.map((project, index) => (
             <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">

@@ -4,6 +4,9 @@ import About from "./About";
 import FeaturedProjects from "./FeaturedProjects";
 import PopularCourses from "./PopularCourses";
 import Link from "@docusaurus/Link";
+import InteractiveAIDemos from "./InteractiveAIDemos";
+import CommunityEngagement from "./CommunityEngagement";
+import BlogAndResources from "./BlogAndResources";
 
 const Homepage: React.FC = () => {
   return (
@@ -38,8 +41,14 @@ const Homepage: React.FC = () => {
         ctaText="Learn More"
         ctaLink="#" // /about/
       />
-      <FeaturedProjects />
       <PopularCourses />
+      <FeaturedProjects />
+      
+      <InteractiveAIDemos />
+      <CommunityEngagement />
+      <BlogAndResources />
+      {/* <AIEthicsAwareness /> */}
+      {/* <NewsletterSubscription /> */}
     </div>
   );
 }

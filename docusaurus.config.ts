@@ -6,7 +6,7 @@ import tailwindPlugin from "./plugins/tailwind-config.cjs";
 const config: Config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.jpg",
 
   // Set the production url of your site here
   url: "https://ai-buddies.github.io/",
@@ -67,10 +67,10 @@ const config: Config = {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "AIBuddies",
-      logo: {
-        alt: "My Site Logo",
-        src: "img/logo.jpg",
-      },
+      // logo: {
+      //   alt: "My Site Logo",
+      //   src: "img/logo.jpg",
+      // },
       items: [
         {
           type: "docSidebar",
