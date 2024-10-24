@@ -13,19 +13,19 @@ const demoData: DemoCardProps[] = [
     title: 'Chatbot Interaction',
     description: 'Interact with an AI-powered chatbot to get instant responses.',
     imageUrl: '/images/chatbot.jpg',
-    demoLink: '/demos/chatbot-interaction',
+    demoLink: '#', // '/demos/chatbot-interaction',
   },
   {
     title: 'Text-to-Speech Synthesis',
     description: 'Convert text to realistic speech using AI technology.',
     imageUrl: '/images/text-to-speech.jpg',
-    demoLink: '/demos/text-to-speech',
+    demoLink: '#', // '/demos/text-to-speech',
   },
   {
     title: 'Style Transfer',
     description: 'Apply artistic styles to your photos using neural networks.',
     imageUrl: '/images/style-transfer.jpg',
-    demoLink: '/demos/style-transfer',
+    demoLink: '#', // '/demos/style-transfer',
   },
 ];
 
