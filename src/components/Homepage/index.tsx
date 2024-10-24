@@ -1,7 +1,9 @@
+import React from "react";
 import Hero from "./Hero";
 import About from "./About";
+import PopularCourses from "./PopularCourses";
 
-function HomepageFeatures(): JSX.Element {
+const Homepage: React.FC = () => {
   return (
     <div>
       <Hero
@@ -34,8 +36,9 @@ function HomepageFeatures(): JSX.Element {
         ctaText="Learn More"
         ctaLink="#" // /about/
       />
+      <PopularCourses />
     </div>
   );
 }
 
-export default HomepageFeatures;
+export default Homepage;
