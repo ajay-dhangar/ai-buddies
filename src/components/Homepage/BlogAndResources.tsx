@@ -31,7 +31,7 @@ const blogData: BlogCardProps[] = [
     title: 'Understanding Machine Learning Algorithms',
     description: 'An introduction to the most common machine learning algorithms and their applications.',
     imageUrl: '/images/ml-algorithms.jpg',
-    link: '/blog/ml-algorithms',
+    link: '#', // '/blog/ml-algorithms',
     date: 'Oct 10, 2024',
     author: 'Alice Johnson',
   },
