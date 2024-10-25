@@ -149,6 +149,18 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: [
+        'java',
+        'latex',
+        'haskell',
+        'matlab',
+        'PHp',
+        'powershell',
+        'bash',
+        'diff',
+        'json',
+        'scss',
+      ],
     },
     docs: {
       sidebar: {
