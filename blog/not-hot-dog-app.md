@@ -1,5 +1,5 @@
 ---
-slug: not-hot-dog-app-tutorial
+slug: not-hot-dog-app
 title: "Building a 'Not Hot Dog' App: A Fun Introduction to Image Classification"
 authors: [ajay-dhangar]
 tags: [ajay-dhangar, AI, machine-learning, image-classification, deep-learning, tutorial]
