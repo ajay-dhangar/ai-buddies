@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-import { buttonVariants } from '@site/src/components/ui/button';
+import { buttonVariants } from '@site/src/ui/button';
 import { cn } from '@site/src/lib/utils';
 
 interface HeroProps {
@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({
       <div className="container mx-auto max-w-[64rem] text-center space-y-6">
         <Link
           href={capsuleLink}
-          className="inline-block px-4 py-1.5 text-xs font-semibold tracking-wider uppercase bg-gray-300 rounded-full animate-fade-in bg-opacity-60 hover:bg-opacity-80 transition duration-300 text-gray-800 dark:text-gray-100"
+          className="inline-block px-4 py-1.5 text-xs font-semibold tracking-wider uppercase bg-[#48df84] rounded-full animate-fade-in bg-opacity-60 hover:bg-opacity-80 transition duration-300 text-gray-800 dark:text-gray-100"
           target="_blank"
         >
           {capsuleText}

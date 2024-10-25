@@ -12,7 +12,7 @@ const courses: Course[] = [
   {
     title: 'Machine Learning Basics',
     description: 'Get started with Machine Learning with foundational concepts and hands-on projects.',
-    imageUrl: '/images/ml-basics.jpg', // Replace with your actual image paths
+    imageUrl: '/images/ml-basics.jpg',
     link: '#',
   },
   {

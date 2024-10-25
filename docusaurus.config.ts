@@ -50,16 +50,31 @@ const config: Config = {
 
   plugins: [
     tailwindPlugin,
-    // [
-    //   '@docusaurus/plugin-ideal-image',
-    //   {
-    //     quality: 70,
-    //     max: 1030, // max resized image's size.
-    //     min: 640, // min resized image's size. if original is lower, use that size.
-    //     steps: 2, // the max number of images generated between min and max (inclusive)
-    //     disableInDev: false,
-    //   },
-    // ],
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 70,
+        max: 1030,
+        min: 640,
+        steps: 2,
+        disableInDev: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "community",
+        path: "community",
+        routeBasePath: "community",
+        // editUrl: "#",
+        sidebarPath: require.resolve("./sidebars.js"),
+        // remarkPlugins: [remarkMath.default],
+        // rehypePlugins: [rehypeKatex.default],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
   ],
 
   themeConfig: {
@@ -77,6 +92,11 @@ const config: Config = {
           sidebarId: "tutorialSidebar",
           position: "left",
           label: "Tutorial",
+        },
+        {
+          label: "Community",
+          to: "/community/",
+          position: "left",
         },
         {
           href: "https://github.com/ai-buddies/ai-buddies.github.io",
@@ -129,6 +149,11 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
     },
   } satisfies Preset.ThemeConfig,
 };

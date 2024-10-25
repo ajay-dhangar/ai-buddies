@@ -11,7 +11,7 @@ const projects: Project[] = [
   {
     title: "AI-Powered Chatbot",
     description: "An intelligent chatbot that uses NLP to engage in human-like conversations.",
-    imageUrl: "/images/chatbot.jpg", // Replace with your actual image paths
+    imageUrl: "/images/chatbot.jpg",
     projectLink: "#"
   },
   {
