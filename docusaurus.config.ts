@@ -4,8 +4,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 import tailwindPlugin from "./plugins/tailwind-config.cjs";
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "AIBuddies",
+  tagline: "AIBuddies is a community of AI enthusiasts",
   favicon: "img/logo.jpg",
 
   // Set the production url of your site here
@@ -16,8 +16,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "ai-buddies", 
+  projectName: "AIBuddies", // 
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
