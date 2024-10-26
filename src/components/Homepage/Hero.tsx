@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import { buttonVariants } from '@site/src/ui/button';
 import { cn } from '@site/src/lib/utils';
+import { FaGithub, FaArrowRight } from "react-icons/fa";
 
 interface HeroProps {
   capsuleText: string;
@@ -52,7 +53,7 @@ const Hero: React.FC<HeroProps> = ({
             href={primaryCtaLink}
             className={cn(buttonVariants({ size: "lg" }), "bg-gray-300 text-gray-800 hover:bg-gray-800 hover:text-white")}
           >
-            {primaryCtaText}
+            {primaryCtaText} <FaArrowRight className="ml-2" />
           </Link>
           <Link
             href={secondaryCtaLink}
@@ -60,7 +61,7 @@ const Hero: React.FC<HeroProps> = ({
             rel="noreferrer"
             className={cn(buttonVariants({ variant: "outline", size: "lg" }), "bg-gray-300 text-gray-800 hover:bg-gray-800 hover:text-white")}
           >
-            {secondaryCtaText}
+            {secondaryCtaText} <FaGithub className="ml-2" />
           </Link>
         </div>
         {credits && (
