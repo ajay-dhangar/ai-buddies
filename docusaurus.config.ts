@@ -70,21 +70,21 @@ const config: Config = {
         disableInDev: false,
       },
     ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "community",
-        path: "community",
-        routeBasePath: "community",
-        // editUrl: "#",
-        sidebarPath: require.resolve("./sidebars.js"),
-        // remarkPlugins: [remarkMath.default],
-        // rehypePlugins: [rehypeKatex.default],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
+    // [
+    //   "@docusaurus/plugin-content-docs",
+    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    //   {
+    //     id: "community",
+    //     path: "community",
+    //     routeBasePath: "community",
+    //     // editUrl: "#",
+    //     sidebarPath: require.resolve("./sidebars.js"),
+    //     // remarkPlugins: [remarkMath.default],
+    //     // rehypePlugins: [rehypeKatex.default],
+    //     showLastUpdateAuthor: true,
+    //     showLastUpdateTime: true,
+    //   },
+    // ],
   ],
 
   markdown: {
@@ -120,8 +120,28 @@ const config: Config = {
           label: "Tutorial",
         },
         {
+          to: "/about",
+          label: "About",
+          position: "left",
+        },
+        {
           label: "Learning Paths",
           to: "/learning-paths",
+          position: "left",
+        },
+        {
+          label: "Projects",
+          to: "/projects",
+          position: "left",
+        },
+        // {
+        //   label: "Resources",
+        //   to: "/resources",
+        //   position: "left",
+        // },
+        {
+          label: "Community",
+          to: "/community",
           position: "left",
         },
         {
@@ -129,11 +149,11 @@ const config: Config = {
           label: "Blog",
           position: "left",
         },
-        {
-          href: "https://github.com/ai-buddies/ai-buddies.github.io",
-          label: "GitHub",
-          position: "right",
-        },
+        // {
+        //   href: "https://github.com/ai-buddies/ai-buddies.github.io",
+        //   label: "GitHub",
+        //   position: "right",
+        // },
       ],
     },
     footer: {

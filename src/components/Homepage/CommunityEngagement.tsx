@@ -13,25 +13,25 @@ const engagementData: EngagementCardProps[] = [
     title: 'Forums & Discussions',
     description: 'Join the conversation and connect with other AI enthusiasts in our vibrant community forums.',
     icon: '💬',
-    link: '/community/forums',
+    link: '#', // /community/forums
   },
   {
     title: 'AI Study Groups',
     description: 'Participate in study groups to learn collaboratively and explore AI concepts in depth.',
     icon: '📚',
-    link: '/community/study-groups',
+    link: '#', // /community/study-groups
   },
   {
     title: 'AI Events & Webinars',
     description: 'Attend AI-focused events, workshops, and webinars hosted by experts in the field.',
     icon: '🎉',
-    link: '/community/events',
+    link: '#', // /community/events
   },
   {
     title: 'Open Source Con...',
     description: 'Contribute to open-source projects and help improve AI tools and libraries.',
     icon: '🚀',
-    link: '/community/contributions',
+    link: '#', // /community/open-source
   },
 ];
 
