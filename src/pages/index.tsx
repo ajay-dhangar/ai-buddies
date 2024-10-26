@@ -8,7 +8,7 @@ export default function Home(): React.ReactElement {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Welcome to AIBuddies, your go-to resource for AI projects and learning paths.">
       <main>
         <Homepage />
       </main>
