@@ -17,30 +17,29 @@ const AdvancedLearningPath: React.FC = () => {
           generative AI to help you become an AI expert.
         </p>
 
-        <div className="flex justify-center my-6 animate-fade-in delay-300">
+        <div className="my-6 text-center">
           <Mermaid
             value={`
-            %% Advanced Learning Path Graph
-            graph TD;
-            style A stroke:#333,stroke-width:2px;
-            style B stroke:#333,stroke-width:2px;
-            style C stroke:#333,stroke-width:2px;
-            style D stroke:#333,stroke-width:2px;
-            style E stroke:#333,stroke-width:2px;
-            style F stroke:#333,stroke-width:2px;
-            style G stroke:#333,stroke-width:2px;
+            %% Advanced Learning Path Sequence Diagram
+            sequenceDiagram
+                participant User as Learner
+                participant A as Review Intermediate Concepts
+                participant B as Advanced Neural Networks
+                participant C as Reinforcement Learning
+                participant D as GANs
+                participant E as Advanced NLP
+                participant F as Deep Learning for Computer Vision
+                participant G as AI Research Projects
 
-            A[📘 Review of Intermediate Concepts] --> B[🧠 Advanced Neural Networks & Deep Learning];
-            B --> C[🔍 Reinforcement Learning];
-            C --> D[🔗 Generative Adversarial Networks];
-            D --> E[💬 Advanced Natural Language Processing];
-            E --> F[🎥 Computer Vision with Deep Learning];
-            F --> G[🚀 AI Research & Real-World Applications];
-
-            %% Additional styling for better readability
-            classDef default stroke:#000,stroke-width:1px;
-            linkStyle default stroke:#007acc,stroke-width:2px,fill:none;
-            `}
+                User->>A: Starts with a review of intermediate concepts
+                A->>B: Dives into Advanced Neural Networks
+                B->>C: Explores Reinforcement Learning
+                C->>D: Learns about GANs
+                D->>E: Masters Advanced NLP techniques
+                E->>F: Applies deep learning to Computer Vision
+                F->>G: Engages in AI research projects
+                G-->>User: Gains expert-level AI knowledge
+          `}
           />
         </div>
 

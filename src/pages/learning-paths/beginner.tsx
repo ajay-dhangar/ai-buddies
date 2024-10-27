@@ -17,30 +17,19 @@ const BeginnerLearningPath: React.FC = () => {
           to get started on your journey.
         </p>
 
-        <div className="flex justify-center my-6 animate-fade-in delay-300">
+        <div className="my-6 text-center">
           <Mermaid
             value={`
-      %% Enhanced Mermaid Graph for Better UX/UI
-      graph TD;
-      style A stroke:#333,stroke-width:2px;
-      style B stroke:#333,stroke-width:2px;
-      style C stroke:#333,stroke-width:2px;
-      style D stroke:#333,stroke-width:2px;
-      style E stroke:#333,stroke-width:2px;
-      style F stroke:#333,stroke-width:2px;
-      style G stroke:#333,stroke-width:2px;
-      
-      A[📘 Introduction to AI] --> B[🐍 Basic Python Programming];
-      B --> C[📊 Linear Algebra & Calculus Basics];
-      C --> D[🤖 Introduction to Machine Learning];
-      D --> E[📈 Basic ML Projects];
-      E --> F[🧠 Introduction to Neural Networks];
-      F --> G[🚀 Simple AI Applications];
-      
-      %% Adding some extra styling
-      classDef default stroke:#000,stroke-width:1px;
-      linkStyle default stroke:#007acc,stroke-width:2px,fill:none;
-    `}
+            %% Beginner Learning Path Mind Map
+            mindmap
+              root((📘 AI Learning Path))
+                A[🐍 Basic Python Programming]
+                B[📊 Linear Algebra & Calculus Basics]
+                C[🤖 Introduction to Machine Learning]
+                D[📈 Basic ML Projects]
+                E[🧠 Introduction to Neural Networks]
+                F[🚀 Simple AI Applications]
+          `}
           />
         </div>
 

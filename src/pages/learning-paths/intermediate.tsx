@@ -9,7 +9,7 @@ const IntermediateLearningPath: React.FC = () => {
       title="Intermediate Learning Path"
       description="Dive deeper into AI concepts with our curated intermediate learning path."
     >
-      <div className="container p-6 dark:bg-gray-900 min-h-screen">
+      <div className="container dark:bg-gray-900">
         <Header title="Intermediate Learning Path" />
         <p className="mx-auto text-base sm:text-xl leading-relaxed animate-fade-in delay-150 my-4 text-center">
           Ready to take your AI skills to the next level? This intermediate
@@ -17,29 +17,28 @@ const IntermediateLearningPath: React.FC = () => {
           and AI projects to help you grow your expertise.
         </p>
 
-        <div className="flex justify-center my-6 animate-fade-in delay-300">
+        <div className="my-6 text-center">
           <Mermaid
             value={`
-            %% Intermediate Learning Path Graph
-            graph TD;
-            style A stroke:#333,stroke-width:2px;
-            style B stroke:#333,stroke-width:2px;
-            style C stroke:#333,stroke-width:2px;
-            style D stroke:#333,stroke-width:2px;
-            style E stroke:#333,stroke-width:2px;
-            style F stroke:#333,stroke-width:2px;
-            style G stroke:#333,stroke-width:2px;
+            %% Intermediate Learning Path Sequence Diagram
+            sequenceDiagram
+                participant User as Learner
+                participant A as AI Basics Review
+                participant B as Data Preprocessing & Feature Engineering
+                participant C as Advanced Linear Algebra & Probability
+                participant D as Deep Learning Algorithms
+                participant E as NLP Basics
+                participant F as Computer Vision Basics
+                participant G as Intermediate Projects
 
-            A[📘 Recap of Basic AI Concepts] --> B[📂 Data Preprocessing & Feature Engineering];
-            B --> C[🧮 Advanced Linear Algebra & Probability];
-            C --> D[🤖 Deep Dive into Machine Learning Algorithms];
-            D --> E[🌐 Natural Language Processing Basics];
-            E --> F[🖼️ Computer Vision Basics];
-            F --> G[🧪 Intermediate AI Projects];
-
-            %% Adding some extra styling
-            classDef default stroke:#000,stroke-width:1px;
-            linkStyle default stroke:#007acc,stroke-width:2px,fill:none;
+                User->>A: Starts with a review of AI basics
+                A->>B: Moves on to Data Preprocessing
+                B->>C: Learns Advanced Math
+                C->>D: Understands Deep Learning Algorithms
+                D->>E: Gets introduced to NLP
+                E->>F: Studies Computer Vision
+                F->>G: Completes Intermediate Projects
+                G-->>User: Gains Intermediate AI skills
           `}
           />
         </div>
