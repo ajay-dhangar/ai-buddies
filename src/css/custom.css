@@ -127,3 +127,9 @@ a:hover {
 .custom-drop-shadow {
   filter: drop-shadow(0 4px 6px var(--ifm-color-primary));
 }
+
+.gradient-text {
+  background: linear-gradient(120deg, var(--hero-gradient-start), var(--hero-gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
