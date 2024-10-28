@@ -2,8 +2,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 import tailwindPlugin from "./plugins/tailwind-config.cjs";
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 const config: Config = {
   title: "AIBuddies",
@@ -18,8 +18,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "ai-buddies", 
-  projectName: "AIBuddies", // 
+  organizationName: "ai-buddies",
+  projectName: "AIBuddies", //
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -48,7 +48,7 @@ const config: Config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           editUrl:
-            "https://github.com/ai-buddies/ai-buddies.github.io/tree/main/",          
+            "https://github.com/ai-buddies/ai-buddies.github.io/tree/main/",
         },
 
         theme: {
@@ -90,16 +90,16 @@ const config: Config = {
   markdown: {
     mermaid: true,
   },
-  
-  themes: ['@docusaurus/theme-mermaid'],
+
+  themes: ["@docusaurus/theme-mermaid"],
 
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
       integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
     },
   ],
 
@@ -149,12 +149,22 @@ const config: Config = {
           label: "Blog",
           position: "left",
         },
+        {
+          type: "search",
+          position: "right",
+        },
         // {
         //   href: "https://github.com/ai-buddies/ai-buddies.github.io",
         //   label: "GitHub",
         //   position: "right",
         // },
       ],
+    },
+    algolia: {
+      apiKey: "325c35f2dc8348505df8084d1ce0be65",
+      indexName: "docsearch",
+      appId: "RGDHSD9WE1",
+      contextualSearch: false,
     },
     footer: {
       style: "dark",
@@ -201,16 +211,16 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: [
-        'java',
-        'latex',
-        'haskell',
-        'matlab',
-        'PHp',
-        'powershell',
-        'bash',
-        'diff',
-        'json',
-        'scss',
+        "java",
+        "latex",
+        "haskell",
+        "matlab",
+        "PHp",
+        "powershell",
+        "bash",
+        "diff",
+        "json",
+        "scss",
       ],
     },
     docs: {
