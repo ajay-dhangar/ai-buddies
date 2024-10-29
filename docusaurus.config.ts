@@ -161,9 +161,9 @@ const config: Config = {
       ],
     },
     algolia: {
-      apiKey: "325c35f2dc8348505df8084d1ce0be65",
-      indexName: "docsearch",
-      appId: "RGDHSD9WE1",
+      apiKey: "df0689777503472173176fc8ff5d0ed4",
+      indexName: "ai-buddiesio",
+      appId: "LXSR7Q6DQ8",
       contextualSearch: false,
     },
     footer: {
