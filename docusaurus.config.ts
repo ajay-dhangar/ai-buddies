@@ -160,6 +160,9 @@ const config: Config = {
         // },
       ],
     },
+
+    // Algoia search is disabled by default. To enable it, you need to provide your own Algolia API key and index name. You can get these from Algolia's website.
+
     algolia: {
       apiKey: "df0689777503472173176fc8ff5d0ed4",
       indexName: "ai-buddiesio",
