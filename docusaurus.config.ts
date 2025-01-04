@@ -11,10 +11,10 @@ const config: Config = {
   favicon: "img/logo.jpg",
 
   // Set the production url of your site here
-  url: "https://ai-buddies.github.io/",
+  url: "https://ajay-dhangar.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/ai-buddies/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
