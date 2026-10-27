@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Ghost, Flame, Sparkles, BookOpen, Plus, Trash2, Cpu, Lock, Terminal, Heart, Radio, Shield, Save } from 'lucide-react';
 import Layout from '@theme/Layout';
+
 export default function DigitalOfrendaVault() {
   const [activeTab, setActiveTab] = useState('ofrenda'); // 'ofrenda' | 'vault' | 'seance'
   
